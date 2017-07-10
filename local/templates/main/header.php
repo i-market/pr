@@ -36,7 +36,14 @@ $assetInstance->addString('<script src="https://maxcdn.bootstrapcdn.com/bootstra
 						</button>
 						
 						<a class="navbar-logo" href="/">
-							Лада Щербакова
+							<?$APPLICATION->IncludeComponent(
+								"bitrix:main.include",
+								"",
+								Array(
+									"AREA_FILE_SHOW" => "file",
+									"PATH" => "/include/header_title.php"
+								)
+							);?>
 						</a>
 						
 						<div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -59,9 +66,22 @@ $assetInstance->addString('<script src="https://maxcdn.bootstrapcdn.com/bootstra
 						</div>
 						
 						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-3 ml-0 pl-0">
-							<span class="navbar-text">+7(903) 726-62-69</span>
-							<a class="navbar-brand" href="https://www.facebook.com/lada.shcherbakova" target="_blank"><img src="<?=SITE_TEMPLATE_PATH?>/img/facebook.png"></a>
-							<a class="navbar-brand" href="mailto:ladapr01@gmail.com"><img src="<?=SITE_TEMPLATE_PATH?>/img/email.png"></a>  
+							<span class="navbar-text">
+								<?$APPLICATION->IncludeComponent(
+									"bitrix:main.include",
+									"",
+									Array(
+										"AREA_FILE_SHOW" => "file",
+										"PATH" => "/include/header_phone.php"
+									)
+								);?>
+							</span>
+							<a class="navbar-brand" href="https://www.facebook.com/lada.shcherbakova" target="_blank">
+								<img src="<?=SITE_TEMPLATE_PATH?>/img/facebook.png">
+							</a>
+							<a class="navbar-brand" href="mailto:ladapr01@gmail.com">
+								<img src="<?=SITE_TEMPLATE_PATH?>/img/email.png">
+							</a>  
 						</div>
 					</nav>
 				</div>
