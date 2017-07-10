@@ -42,7 +42,7 @@ $assetInstance->addString('<script src="https://maxcdn.bootstrapcdn.com/bootstra
 						<div class="collapse navbar-collapse" id="navbarSupportedContent">
 							<?$APPLICATION->IncludeComponent(
 								"bitrix:menu",
-								"",
+								"main_menu",
 								Array(
 									"ALLOW_MULTI_SELECT" => "N",
 									"CHILD_MENU_TYPE" => "",
