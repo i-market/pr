@@ -7,6 +7,7 @@ $assetInstance = Bitrix\Main\Page\Asset::getInstance(); // Для подключ
 $assetInstance->addCss(SITE_TEMPLATE_PATH.'/css/bootstrap.css');
 $assetInstance->addCss(SITE_TEMPLATE_PATH.'/css/bootstrap-reboot.css');
 $assetInstance->addCss(SITE_TEMPLATE_PATH.'/css/bootstrap-grid.css');
+$assetInstance->addCss(SITE_TEMPLATE_PATH.'/css/custom.css');
 
 $assetInstance->addString('<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>');
 $assetInstance->addString('<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>');
@@ -64,8 +65,8 @@ $assetInstance->addString('<script src="https://maxcdn.bootstrapcdn.com/bootstra
 						
 						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-3 ml-0 pl-0">
 							<span class="navbar-text">+7(903) 726-62-69</span>
-							<a class="navbar-brand" href="https://www.facebook.com/lada.shcherbakova" target="_blank"><img src="img/facebook.png"></a>
-							<a class="navbar-brand" href="mailto:ladapr01@gmail.com"><img src="img/email.png"></a>  
+							<a class="navbar-brand" href="https://www.facebook.com/lada.shcherbakova" target="_blank"><img src="<?=SITE_TEMPLATE_PATH?>/img/facebook.png"></a>
+							<a class="navbar-brand" href="mailto:ladapr01@gmail.com"><img src="<?=SITE_TEMPLATE_PATH?>/img/email.png"></a>  
 						</div>
 					</nav>
 				</div>
@@ -83,19 +84,19 @@ $assetInstance->addString('<script src="https://maxcdn.bootstrapcdn.com/bootstra
 						</ol>
 						<div class="carousel-inner" role="listbox">
 							<div class="carousel-item active">
-								<img class="d-block" src="img/slide3.jpg" alt="Разработка коммуникационной платформы">
+								<img class="d-block" src="<?=SITE_TEMPLATE_PATH?>/img/slide3.jpg" alt="Разработка коммуникационной платформы">
 								<div class="carousel-caption d-sm-inline-block">
 									<p class="col-sm-4">Разработка коммуникационной платформы</p>
 								</div>
 							</div>
 							<div class="carousel-item">
-								<img class="d-block" src="img/slide4.jpg" alt="Разработка коммуникационной платформы">
+								<img class="d-block" src="<?=SITE_TEMPLATE_PATH?>/img/slide4.jpg" alt="Разработка коммуникационной платформы">
 								<div class="carousel-caption d-sm-inline-block">
 									<p class="col-sm-4">Разработка коммуникационной платформы</p>
 								</div>
 							</div>
 							<div class="carousel-item">
-								<img class="d-block" src="img/slide5.jpg" alt="Разработка коммуникационной платформы">
+								<img class="d-block" src="<?=SITE_TEMPLATE_PATH?>/img/slide5.jpg" alt="Разработка коммуникационной платформы">
 								<div class="carousel-caption d-sm-block">
 									<p class="col-sm-4">Разработка коммуникационной платформы</p>
 								</div>
