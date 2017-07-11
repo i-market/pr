@@ -1,6 +1,7 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
 $this->setFrameMode(true);
 ?>
+
 <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
 	<ol class="carousel-indicators">
 		<?for($i = 0; $i < count($arResult["ITEMS"]); $i++):?>
