@@ -3,11 +3,21 @@
 $this->setFrameMode(true);
 
 if(0 < count($arResult['ITEMS'])):
-	foreach($arResult['ITEMS'] as $key => $arItem):
+?>
+	<div class="col">
+		<h2 class="text-center-header">
+			<?=\Bitrix\Main\Localization\Loc::getMessage('MAIN_BLOCK_BLOG_TITLE');?>
+		</h2>
+	</div>
+	
+	<?foreach($arResult['ITEMS'] as $key => $arItem):
 		$this->AddEditAction($arItem['ID'], $arItem['EDIT_LINK'], CIBlock::GetArrayByID($arItem['IBLOCK_ID'], 'ELEMENT_EDIT'));
 		$this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayByID($arItem['IBLOCK_ID'], 'ELEMENT_DELETE'), array('CONFIRM' => GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM')));
 		?>
-		<hr class="featurette-divider">
+		
+		<?if(0 < $key):?>
+			<hr class="featurette-divider">
+		<?endif;?>
 		
 		<div class="row justify-content-md-center" id="<?=$this->GetEditAreaId($arItem['ID']);?>">
 			<div class="col col-lg-8">
@@ -56,10 +66,4 @@ if(0 < count($arResult['ITEMS'])):
 			</div>
 		</div>
 	<?endforeach;?>
-	
-	<?if($arResult["NAV_STRING"]):?>
-		<div class="blog-pagination">
-			<?=$arResult["NAV_STRING"];?>
-		</div>
-	<?endif;?>
 <?endif;?>
