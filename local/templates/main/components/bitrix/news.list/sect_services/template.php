@@ -15,19 +15,17 @@ if(0 < (count($arResult['ITEMS']))):
 			$numItem = $key + 1;
 			($numItem < 10) ? $numberService = '0'.$numItem : $numberService = $numItem;
 			
+			$class1 = 'col-md-12';
+			
 			if(($numItem % 2) != 0):
 				if($arItem['PREVIEW_PICTURE']['SRC']):
 					$class1 = 'col-md-7';
 					$class2 = 'col-md-5';
-				else:
-					$class1 = 'col-md-12';
 				endif;
 			else:
 				if($arItem['PREVIEW_PICTURE']['SRC']):
 					$class1 = 'col-md-7 push-md-5';
 					$class2 = 'col-md-5 pull-md-7';
-				else:
-					$class1 = 'col-md-12';
 				endif;
 			endif;
 			?>
