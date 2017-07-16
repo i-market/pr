@@ -1,0 +1,27 @@
+#subscribe #subscribe-msg-success{
+	display: none;
+	margin: 0 0 20px 0;
+    font-size: 16px;
+    color: #32CD32;
+}
+#subscribe #subscribe-msg-error,
+#subscribe #subscribe-msg-already{
+	display: none;
+	margin: 0 0 20px 0;
+    font-size: 16px;
+    color: red;
+}
+
+#subscribe .subscribe-legal{
+	margin: 10px 0;
+    font-size: 14px;
+    color: #fff;
+}
+
+#subscribe button.btn:hover{
+	cursor: pointer;
+}
+
+#subscribe input.error{
+	border: 1px solid red;
+}

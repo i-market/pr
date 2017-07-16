@@ -71,11 +71,18 @@
 							);?>
 						</span>
 						
-						<form class="form-inline mt-4">
-							<label class="sr-only" for="inlineFormInput">Email</label>
-							<input type="email" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInput" placeholder="Email">
-							<button type="submit" class="btn btn-primary mt-2">Подписаться</button>
-						</form>
+						<?$APPLICATION->IncludeComponent(
+	"pr:subscribe", 
+	".default", 
+	array(
+		"SUBSCRIBE_BUTTON_TEXT" => "Подписаться",
+		"SUBSCRIBE_ERROR_TEXT" => "Неизвестная ошибка! Попробуйте пожалуйста позднее.",
+		"SUBSCRIBE_SUCCESS_TEXT" => "Вы успешно подписаны",
+		"COMPONENT_TEMPLATE" => ".default",
+		"SUBSCRIBE_ALREADY_TEXT" => "Вы уже подписаны на рассылку"
+	),
+	false
+);?>
 					</div>
 				</div>
 			</div>
