@@ -1,0 +1,25 @@
+#feedback #feedback-msg-success{
+	display: none;
+	margin: 40px 0;
+	font-size: 18px;
+	color: green;
+}
+#feedback #feedback-msg-error{
+	display: none;
+	margin: 40px 0;
+	font-size: 18px;
+	color: red;	
+}
+
+#feedback .feedback-legal{
+	margin: 20px 0;
+}
+
+#feedback button.btn:hover{
+	cursor: pointer;
+}
+
+#feedback input.error,
+#feedback textarea.error{
+	border: 1px solid red;
+}
